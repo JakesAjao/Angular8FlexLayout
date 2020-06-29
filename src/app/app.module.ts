@@ -10,12 +10,16 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule,HTTP_INTERCEPTORS  } from '@angular/common/http';
 import { JwtInterceptor } from './_helpers/jwt.interceptor';
 import { ErrorInterceptor } from './_helpers/error.interceptor';
+import {LayoutModule} from './layout/layout.module';
+import {DashboardModule} from './dashboard/dashboard.module';
 @NgModule({
     imports: [
         BrowserModule,
         ReactiveFormsModule,
         HttpClientModule,
-        appRoutingModule
+        appRoutingModule,
+        LayoutModule,
+        DashboardModule,
     ],
     declarations: [
         AppComponent,
