@@ -7,6 +7,7 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {FlexLayoutModule} from '@angular/flex-layout';
   declarations: [
     MainLayoutComponent,
     HeaderComponent,
-    SidebarComponent
+    SidebarComponent,
+    FooterComponent
   ]
 })
 export class LayoutModule { }
